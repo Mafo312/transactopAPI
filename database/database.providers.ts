@@ -7,10 +7,10 @@ export const databaseProviders = [
     useFactory: async () => {
       const sequelize = new Sequelize({
         dialect: 'mysql',
-        host: 'database',
+        host: 'localhost',
         port: 3306,
         username: 'root',
-        password: '',
+        password: 'toor',
         database: 'transaction',
       });
       sequelize.addModels([Transaction]);
