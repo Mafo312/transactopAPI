@@ -9,9 +9,9 @@ export const databaseProviders = [
         dialect: 'mysql',
         host: 'database',
         port: 3306,
-        username: 'db_user',
-        password: 'db_password',
-        database: 'transac_db',
+        username: 'root',
+        password: '',
+        database: 'transaction',
       });
       sequelize.addModels([Transaction]);
       await sequelize.sync();
